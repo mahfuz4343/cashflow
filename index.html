@@ -36,29 +36,17 @@
     overflow-x: hidden;
   }
 
-  h1, h2, h3, h4, h5 {
-    font-family: 'Space Grotesk', sans-serif;
-  }
+  h1, h2, h3, h4, h5 { font-family: 'Space Grotesk', sans-serif; }
 
   .bg-glow {
-    position: fixed;
-    top: -30%;
-    left: -10%;
-    width: 60vw;
-    height: 60vw;
+    position: fixed; top: -30%; left: -10%; width: 60vw; height: 60vw;
     background: radial-gradient(circle, rgba(74,222,128,0.06) 0%, transparent 70%);
-    pointer-events: none;
-    z-index: 0;
+    pointer-events: none; z-index: 0;
   }
   .bg-glow-2 {
-    position: fixed;
-    bottom: -20%;
-    right: -10%;
-    width: 50vw;
-    height: 50vw;
+    position: fixed; bottom: -20%; right: -10%; width: 50vw; height: 50vw;
     background: radial-gradient(circle, rgba(250,204,21,0.04) 0%, transparent 70%);
-    pointer-events: none;
-    z-index: 0;
+    pointer-events: none; z-index: 0;
   }
 
   ::-webkit-scrollbar { width: 6px; }
@@ -67,286 +55,131 @@
   ::-webkit-scrollbar-thumb:hover { background: var(--fg-muted); }
 
   .card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    transition: all 0.3s ease;
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 16px; transition: all 0.3s ease;
   }
-  .card:hover {
-    border-color: rgba(74, 222, 128, 0.2);
-  }
+  .card:hover { border-color: rgba(74, 222, 128, 0.2); }
 
   .input-field {
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 10px 14px;
-    color: var(--fg);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 14px;
-    transition: all 0.25s ease;
-    outline: none;
-    width: 100%;
+    background: var(--bg); border: 1px solid var(--border); border-radius: 10px;
+    padding: 10px 14px; color: var(--fg); font-family: 'DM Sans', sans-serif;
+    font-size: 14px; transition: all 0.25s ease; outline: none; width: 100%;
   }
-  .input-field:focus {
-    border-color: var(--accent);
-    box-shadow: 0 0 0 3px var(--accent-dim);
-  }
-  .input-field::placeholder {
-    color: var(--fg-muted);
-    opacity: 0.6;
-  }
+  .input-field:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-dim); }
+  .input-field::placeholder { color: var(--fg-muted); opacity: 0.6; }
 
   select.input-field {
     appearance: none;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%238a9b8c' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 12px center;
-    padding-right: 36px;
-    cursor: pointer;
+    background-repeat: no-repeat; background-position: right 12px center;
+    padding-right: 36px; cursor: pointer;
   }
-  select.input-field option {
-    background: var(--card);
-    color: var(--fg);
-  }
+  select.input-field option { background: var(--card); color: var(--fg); }
 
   .btn-primary {
-    background: var(--accent);
-    color: var(--bg);
-    font-weight: 600;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 14px;
-    transition: all 0.25s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+    background: var(--accent); color: var(--bg); font-weight: 600; padding: 10px 20px;
+    border-radius: 10px; border: none; cursor: pointer; font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px; transition: all 0.25s ease; display: inline-flex; align-items: center; gap: 8px;
   }
-  .btn-primary:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 6px 20px rgba(74, 222, 128, 0.25);
-  }
+  .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(74, 222, 128, 0.25); }
   .btn-primary:active { transform: translateY(0); }
 
   .btn-danger {
-    background: transparent;
-    color: var(--danger);
-    border: 1px solid transparent;
-    padding: 6px 10px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 13px;
-    transition: all 0.2s ease;
+    background: transparent; color: var(--danger); border: 1px solid transparent;
+    padding: 6px 10px; border-radius: 8px; cursor: pointer; font-size: 13px; transition: all 0.2s ease;
   }
-  .btn-danger:hover {
-    background: var(--danger-dim);
-    border-color: rgba(248, 113, 113, 0.3);
-  }
+  .btn-danger:hover { background: var(--danger-dim); border-color: rgba(248, 113, 113, 0.3); }
 
   .btn-ghost {
-    background: transparent;
-    color: var(--fg-muted);
-    border: 1px solid var(--border);
-    padding: 8px 16px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 13px;
-    transition: all 0.2s ease;
+    background: transparent; color: var(--fg-muted); border: 1px solid var(--border);
+    padding: 8px 16px; border-radius: 10px; cursor: pointer; font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px; transition: all 0.2s ease;
   }
-  .btn-ghost:hover {
-    border-color: var(--fg-muted);
-    color: var(--fg);
-  }
+  .btn-ghost:hover { border-color: var(--fg-muted); color: var(--fg); }
 
   .btn-gold {
-    background: var(--gold);
-    color: var(--bg);
-    font-weight: 600;
-    padding: 8px 16px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 13px;
-    transition: all 0.25s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
+    background: var(--gold); color: var(--bg); font-weight: 600; padding: 8px 16px;
+    border-radius: 10px; border: none; cursor: pointer; font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px; transition: all 0.25s ease; display: inline-flex; align-items: center; gap: 6px;
   }
-  .btn-gold:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 6px 20px rgba(250, 204, 21, 0.2);
-  }
+  .btn-gold:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(250, 204, 21, 0.2); }
   .btn-gold:active { transform: translateY(0); }
 
-  .stat-card {
-    position: relative;
-    overflow: hidden;
-  }
+  .stat-card { position: relative; overflow: hidden; }
   .stat-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 3px;
-    border-radius: 16px 16px 0 0;
+    content: ''; position: absolute; top: 0; left: 0;
+    width: 100%; height: 3px; border-radius: 16px 16px 0 0;
   }
   .stat-card.income::before { background: var(--accent); }
   .stat-card.expense::before { background: var(--danger); }
   .stat-card.net::before { background: var(--gold); }
 
-  .entry-row {
-    animation: slideIn 0.3s ease forwards;
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  @keyframes slideIn {
-    to { opacity: 1; transform: translateY(0); }
-  }
+  .entry-row { animation: slideIn 0.3s ease forwards; opacity: 0; transform: translateY(8px); }
+  @keyframes slideIn { to { opacity: 1; transform: translateY(0); } }
 
   .toast {
-    position: fixed;
-    bottom: 24px;
-    right: 24px;
-    padding: 14px 22px;
-    border-radius: 12px;
-    font-size: 14px;
-    font-weight: 500;
-    z-index: 1000;
+    position: fixed; bottom: 24px; right: 24px; padding: 14px 22px; border-radius: 12px;
+    font-size: 14px; font-weight: 500; z-index: 1000;
     animation: toastIn 0.35s ease, toastOut 0.35s ease 2.5s forwards;
-    pointer-events: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    pointer-events: none; display: flex; align-items: center; gap: 10px;
   }
-  .toast.success {
-    background: rgba(74, 222, 128, 0.15);
-    border: 1px solid rgba(74, 222, 128, 0.3);
-    color: var(--accent);
-  }
-  .toast.error {
-    background: rgba(248, 113, 113, 0.15);
-    border: 1px solid rgba(248, 113, 113, 0.3);
-    color: var(--danger);
-  }
-  .toast.info {
-    background: rgba(250, 204, 21, 0.15);
-    border: 1px solid rgba(250, 204, 21, 0.3);
-    color: var(--gold);
-  }
-  @keyframes toastIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  @keyframes toastOut {
-    from { opacity: 1; transform: translateY(0); }
-    to { opacity: 0; transform: translateY(20px); }
-  }
+  .toast.success { background: rgba(74, 222, 128, 0.15); border: 1px solid rgba(74, 222, 128, 0.3); color: var(--accent); }
+  .toast.error { background: rgba(248, 113, 113, 0.15); border: 1px solid rgba(248, 113, 113, 0.3); color: var(--danger); }
+  .toast.info { background: rgba(250, 204, 21, 0.15); border: 1px solid rgba(250, 204, 21, 0.3); color: var(--gold); }
+  @keyframes toastIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes toastOut { from { opacity: 1; transform: translateY(0); } to { opacity: 0; transform: translateY(20px); } }
 
   .month-nav-btn {
-    background: var(--bg);
-    border: 1px solid var(--border);
-    color: var(--fg-muted);
-    width: 36px; height: 36px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.2s ease;
+    background: var(--bg); border: 1px solid var(--border); color: var(--fg-muted);
+    width: 36px; height: 36px; border-radius: 10px; display: flex;
+    align-items: center; justify-content: center; cursor: pointer; transition: all 0.2s ease;
   }
-  .month-nav-btn:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-  }
+  .month-nav-btn:hover { border-color: var(--accent); color: var(--accent); }
 
   .cat-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    padding: 3px 10px;
-    border-radius: 20px;
-    font-size: 11px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    display: inline-flex; align-items: center; gap: 5px; padding: 3px 10px;
+    border-radius: 20px; font-size: 11px; font-weight: 500;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+
+  .person-badge {
+    display: inline-flex; align-items: center; gap: 4px; padding: 3px 10px;
+    border-radius: 20px; font-size: 11px; font-weight: 500;
+    background: rgba(96, 165, 250, 0.12); color: #60a5fa;
   }
 
   .tab-btn {
-    padding: 8px 18px;
-    border-radius: 10px;
-    font-size: 13px;
-    font-weight: 500;
-    cursor: pointer;
-    border: none;
-    background: transparent;
-    color: var(--fg-muted);
-    transition: all 0.2s ease;
-    font-family: 'Space Grotesk', sans-serif;
+    padding: 8px 18px; border-radius: 10px; font-size: 13px; font-weight: 500;
+    cursor: pointer; border: none; background: transparent; color: var(--fg-muted);
+    transition: all 0.2s ease; font-family: 'Space Grotesk', sans-serif;
   }
-  .tab-btn.active {
-    background: var(--accent-dim);
-    color: var(--accent);
-  }
-  .tab-btn:hover:not(.active) {
-    color: var(--fg);
-  }
+  .tab-btn.active { background: var(--accent-dim); color: var(--accent); }
+  .tab-btn:hover:not(.active) { color: var(--fg); }
 
-  .empty-state {
-    text-align: center;
-    padding: 40px 20px;
-    color: var(--fg-muted);
-  }
+  .empty-state { text-align: center; padding: 40px 20px; color: var(--fg-muted); }
 
-  .pulse-dot {
-    width: 8px; height: 8px;
-    border-radius: 50%;
-    animation: pulse 2s infinite;
-  }
-  @keyframes pulse {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.5; transform: scale(1.3); }
-  }
+  .pulse-dot { width: 8px; height: 8px; border-radius: 50%; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.5; transform: scale(1.3); } }
 
   .particle {
-    position: fixed;
-    width: 2px; height: 2px;
-    border-radius: 50%;
-    background: var(--accent);
-    opacity: 0.15;
-    pointer-events: none;
-    z-index: 0;
+    position: fixed; width: 2px; height: 2px; border-radius: 50%;
+    background: var(--accent); opacity: 0.15; pointer-events: none; z-index: 0;
     animation: float linear infinite;
   }
   @keyframes float {
     0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
-    10% { opacity: 0.15; }
-    90% { opacity: 0.15; }
+    10% { opacity: 0.15; } 90% { opacity: 0.15; }
     100% { transform: translateY(-10vh) rotate(720deg); opacity: 0; }
   }
 
   .modal-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.6);
-    backdrop-filter: blur(4px);
-    z-index: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: fadeIn 0.2s ease;
+    position: fixed; inset: 0; background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(4px); z-index: 500; display: flex;
+    align-items: center; justify-content: center; animation: fadeIn 0.2s ease;
   }
   .modal-content {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 28px;
-    max-width: 440px;
-    width: 90%;
-    animation: modalIn 0.3s ease;
+    background: var(--card); border: 1px solid var(--border); border-radius: 20px;
+    padding: 28px; max-width: 440px; width: 90%; animation: modalIn 0.3s ease;
   }
   @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
   @keyframes modalIn { from { opacity: 0; transform: scale(0.95) translateY(10px); } to { opacity: 1; transform: scale(1) translateY(0); } }
@@ -358,10 +191,7 @@
   }
 
   @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
-      animation-duration: 0.01ms !important;
-      transition-duration: 0.01ms !important;
-    }
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
   }
 </style>
 </head>
@@ -388,7 +218,6 @@
         </div>
       </div>
 
-      <!-- Month Navigator -->
       <div style="display:flex; align-items:center; gap:10px;">
         <button class="month-nav-btn" onclick="changeMonth(-1)" aria-label="Previous month">
           <i class="fa-solid fa-chevron-left" style="font-size:12px;"></i>
@@ -401,7 +230,6 @@
         </button>
       </div>
 
-      <!-- Actions -->
       <div class="header-actions" style="display:flex; gap:8px; align-items:center;">
         <button class="btn-gold" onclick="downloadExcel()" aria-label="Download Excel report">
           <i class="fa-solid fa-file-excel"></i> Download Excel
@@ -486,6 +314,13 @@
               <label style="font-size:12px; color:var(--fg-muted); display:block; margin-bottom:5px; font-weight:500;">Category</label>
               <select id="entry-category" class="input-field"></select>
             </div>
+            <!-- Person name field — only visible for expenses -->
+            <div id="person-field-wrapper" style="display:none;">
+              <label style="font-size:12px; color:var(--fg-muted); display:block; margin-bottom:5px; font-weight:500;">
+                <i class="fa-solid fa-user" style="margin-right:3px;"></i> Paid To (Person)
+              </label>
+              <input type="text" id="entry-person" class="input-field" placeholder="e.g. John Smith" maxlength="40">
+            </div>
             <div>
               <label style="font-size:12px; color:var(--fg-muted); display:block; margin-bottom:5px; font-weight:500;">Date</label>
               <input type="date" id="entry-date" class="input-field">
@@ -562,7 +397,7 @@
   /* ============================
      Category Definitions
      ============================ */
-  const INCOME_CATEGORIES = [
+  var INCOME_CATEGORIES = [
     { value: 'salary', label: 'Salary', icon: 'fa-briefcase', color: '#4ade80' },
     { value: 'freelance', label: 'Freelance', icon: 'fa-laptop-code', color: '#34d399' },
     { value: 'investment', label: 'Investment', icon: 'fa-chart-line', color: '#2dd4bf' },
@@ -571,7 +406,7 @@
     { value: 'other-income', label: 'Other', icon: 'fa-ellipsis', color: '#94a3b8' }
   ];
 
-  const EXPENSE_CATEGORIES = [
+  var EXPENSE_CATEGORIES = [
     { value: 'food', label: 'Food & Dining', icon: 'fa-utensils', color: '#f87171' },
     { value: 'transport', label: 'Transport', icon: 'fa-car', color: '#fb923c' },
     { value: 'housing', label: 'Housing / Rent', icon: 'fa-house', color: '#facc15' },
@@ -587,19 +422,19 @@
   /* ============================
      State
      ============================ */
-  let currentType = 'income';
-  let currentFilter = 'all';
-  let chartView = 'category';
-  let currentDate = new Date();
-  let data = {};
-  let mainChart = null;
+  var currentType = 'income';
+  var currentFilter = 'all';
+  var chartView = 'category';
+  var currentDate = new Date();
+  var data = {};
+  var mainChart = null;
 
   /* ============================
      Local Storage
      ============================ */
   function loadData() {
     try {
-      const saved = localStorage.getItem('pettyflow_data');
+      var saved = localStorage.getItem('pettyflow_data');
       if (saved) data = JSON.parse(saved);
     } catch(e) { data = {}; }
   }
@@ -648,6 +483,8 @@
     currentType = type;
     document.getElementById('tab-income').classList.toggle('active', type === 'income');
     document.getElementById('tab-expense').classList.toggle('active', type === 'expense');
+    /* Show/hide the person name field */
+    document.getElementById('person-field-wrapper').style.display = type === 'expense' ? 'block' : 'none';
     populateCategories();
   }
 
@@ -665,6 +502,7 @@
     var amount = parseFloat(document.getElementById('entry-amount').value);
     var category = document.getElementById('entry-category').value;
     var dateVal = document.getElementById('entry-date').value;
+    var person = currentType === 'expense' ? document.getElementById('entry-person').value.trim() : '';
 
     if (!desc) { showToast('Please enter a description', 'error'); return; }
     if (!amount || amount <= 0) { showToast('Please enter a valid amount', 'error'); return; }
@@ -673,20 +511,29 @@
     var key = getMonthKey(currentDate);
     if (!data[key]) data[key] = [];
 
-    data[key].push({
+    var entry = {
       id: Date.now() + Math.random(),
       type: currentType,
       desc: desc,
       amount: amount,
       category: category,
       date: dateVal
-    });
+    };
 
+    /* Only add person for expense entries */
+    if (currentType === 'expense' && person) {
+      entry.person = person;
+    }
+
+    data[key].push(entry);
     saveData();
     updateAll();
 
     document.getElementById('entry-desc').value = '';
     document.getElementById('entry-amount').value = '';
+    if (currentType === 'expense') {
+      document.getElementById('entry-person').value = '';
+    }
 
     var label = currentType === 'income' ? 'Income' : 'Expense';
     showToast(label + ' of $' + amount.toFixed(2) + ' added', 'success');
@@ -739,8 +586,10 @@
     }
     if (search) {
       entries = entries.filter(function(e) {
+        var personMatch = e.person && e.person.toLowerCase().includes(search);
         return e.desc.toLowerCase().includes(search) ||
-               getCategoryInfo(e.category, e.type).label.toLowerCase().includes(search);
+               getCategoryInfo(e.category, e.type).label.toLowerCase().includes(search) ||
+               personMatch;
       });
     }
 
@@ -765,6 +614,12 @@
       var dateObj = new Date(entry.date + 'T00:00:00');
       var dateStr = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
 
+      /* Build person badge HTML if person exists */
+      var personHTML = '';
+      if (entry.person) {
+        personHTML = '<span class="person-badge"><i class="fa-solid fa-user" style="font-size:9px;"></i> ' + entry.person + '</span>';
+      }
+
       return '<div class="entry-row" style="animation-delay:' + (i * 40) + 'ms; display:flex; align-items:center; gap:12px; padding:12px 14px; background:var(--bg); border-radius:12px; border:1px solid var(--border); transition: all 0.2s ease;" onmouseenter="this.style.borderColor=\'var(--accent)\'" onmouseleave="this.style.borderColor=\'var(--border)\'">' +
         '<div style="width:38px; height:38px; border-radius:10px; background:' + (isIncome ? 'var(--accent-dim)' : 'var(--danger-dim)') + '; display:flex; align-items:center; justify-content:center; flex-shrink:0;">' +
           '<i class="fa-solid ' + cat.icon + '" style="color:' + cat.color + '; font-size:14px;"></i>' +
@@ -773,8 +628,9 @@
           '<div style="display:flex; align-items:center; gap:8px; margin-bottom:3px;">' +
             '<span style="font-size:14px; font-weight:500; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">' + entry.desc + '</span>' +
           '</div>' +
-          '<div style="display:flex; align-items:center; gap:8px;">' +
+          '<div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">' +
             '<span class="cat-badge" style="background:' + cat.color + '18; color:' + cat.color + ';">' + cat.label + '</span>' +
+            personHTML +
             '<span style="font-size:11px; color:var(--fg-muted);">' + dateStr + '</span>' +
           '</div>' +
         '</div>' +
@@ -854,20 +710,13 @@
           datasets: [{
             data: catValues,
             backgroundColor: catColors.map(function(c) { return c + 'cc'; }),
-            borderColor: catColors,
-            borderWidth: 2,
-            hoverOffset: 8
+            borderColor: catColors, borderWidth: 2, hoverOffset: 8
           }]
         },
         options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          cutout: '65%',
+          responsive: true, maintainAspectRatio: false, cutout: '65%',
           plugins: {
-            legend: {
-              position: 'bottom',
-              labels: { color: '#8a9b8c', font: { family: 'DM Sans', size: 11 }, padding: 12, usePointStyle: true, pointStyleWidth: 8 }
-            },
+            legend: { position: 'bottom', labels: { color: '#8a9b8c', font: { family: 'DM Sans', size: 11 }, padding: 12, usePointStyle: true, pointStyleWidth: 8 } },
             tooltip: {
               backgroundColor: '#1c211d', titleColor: '#e8ede9', bodyColor: '#8a9b8c',
               borderColor: '#2a332b', borderWidth: 1, cornerRadius: 10, padding: 10,
@@ -912,8 +761,7 @@
           ]
         },
         options: {
-          responsive: true,
-          maintainAspectRatio: false,
+          responsive: true, maintainAspectRatio: false,
           scales: {
             x: { grid: { color: 'rgba(42,51,43,0.5)' }, ticks: { color: '#8a9b8c', font: { family: 'DM Sans', size: 11 } } },
             y: { grid: { color: 'rgba(42,51,43,0.5)' }, ticks: { color: '#8a9b8c', font: { family: 'DM Sans', size: 11 }, callback: function(v) { return '$' + v; } }, beginAtZero: true }
@@ -948,38 +796,97 @@
     /* Sort entries by date ascending for the report */
     var sorted = entries.slice().sort(function(a, b) { return new Date(a.date) - new Date(b.date); });
 
-    /* Build rows for the worksheet */
+    /* Separate income and expense entries */
+    var incomeEntries = sorted.filter(function(e) { return e.type === 'income'; });
+    var expenseEntries = sorted.filter(function(e) { return e.type === 'expense'; });
+
+    /* Group expense entries by person */
+    var personGroups = {};
+    var noPersonEntries = [];
+    expenseEntries.forEach(function(e) {
+      var pName = (e.person && e.person.trim()) ? e.person.trim() : '';
+      if (pName) {
+        if (!personGroups[pName]) personGroups[pName] = [];
+        personGroups[pName].push(e);
+      } else {
+        noPersonEntries.push(e);
+      }
+    });
+
+    /* Sort person names alphabetically */
+    var personNames = Object.keys(personGroups).sort();
+
+    /* Build rows */
     var rows = [];
 
     /* Title row */
     rows.push(['Petty Flow Report \u2014 ' + monthLabel]);
-    rows.push([]); /* blank spacer row */
-
-    /* Header row */
-    rows.push(['Date', 'Type', 'Category', 'Description', 'Amount ($)']);
-
-    /* Data rows */
-    sorted.forEach(function(entry) {
-      var dateObj = new Date(entry.date + 'T00:00:00');
-      var dateStr = dateObj.toLocaleDateString('en-US', { year: 'numeric', month: '2-digit', day: '2-digit' });
-      var typeLabel = entry.type === 'income' ? 'Income' : 'Expense';
-      var catInfo = getCategoryInfo(entry.category, entry.type);
-      var amount = entry.type === 'income' ? entry.amount : -entry.amount;
-
-      rows.push([dateStr, typeLabel, catInfo.label, entry.desc, parseFloat(amount.toFixed(2))]);
-    });
-
-    /* Blank row before totals */
+    rows.push([]);
+    rows.push(['Generated on: ' + new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' })]);
     rows.push([]);
 
-    /* Calculate totals */
-    var totalIncome = sorted.filter(function(e) { return e.type === 'income'; }).reduce(function(s, e) { return s + e.amount; }, 0);
-    var totalExpense = sorted.filter(function(e) { return e.type === 'expense'; }).reduce(function(s, e) { return s + e.amount; }, 0);
-    var netFlow = totalIncome - totalExpense;
+    /* ---- SECTION 1: INCOME ---- */
+    rows.push(['INCOME']);
+    rows.push(['Date', 'Category', 'Description', 'Amount ($)']);
+    incomeEntries.forEach(function(entry) {
+      var dateObj = new Date(entry.date + 'T00:00:00');
+      var dateStr = dateObj.toLocaleDateString('en-US', { year: 'numeric', month: '2-digit', day: '2-digit' });
+      var catInfo = getCategoryInfo(entry.category, 'income');
+      rows.push([dateStr, catInfo.label, entry.desc, parseFloat(entry.amount.toFixed(2))]);
+    });
+    var totalIncome = incomeEntries.reduce(function(s, e) { return s + e.amount; }, 0);
+    rows.push(['', '', 'Total Income', parseFloat(totalIncome.toFixed(2))]);
+    rows.push([]);
 
-    rows.push(['', '', '', 'Total Income', parseFloat(totalIncome.toFixed(2))]);
-    rows.push(['', '', '', 'Total Expenses', parseFloat((-totalExpense).toFixed(2))]);
-    rows.push(['', '', '', 'Net Cash Flow', parseFloat(netFlow.toFixed(2))]);
+    /* ---- SECTION 2: EXPENSES BY PERSON ---- */
+    rows.push(['EXPENSES']);
+    rows.push([]);
+
+    var totalExpense = expenseEntries.reduce(function(s, e) { return s + e.amount; }, 0);
+
+    /* For each person, list their expenses with a subtotal */
+    personNames.forEach(function(pName) {
+      var personEntries = personGroups[pName];
+      var personTotal = personEntries.reduce(function(s, e) { return s + e.amount; }, 0);
+
+      rows.push(['Paid To: ' + pName]);
+      rows.push(['Date', 'Category', 'Description', 'Amount ($)']);
+
+      personEntries.forEach(function(entry) {
+        var dateObj = new Date(entry.date + 'T00:00:00');
+        var dateStr = dateObj.toLocaleDateString('en-US', { year: 'numeric', month: '2-digit', day: '2-digit' });
+        var catInfo = getCategoryInfo(entry.category, 'expense');
+        rows.push([dateStr, catInfo.label, entry.desc, parseFloat(entry.amount.toFixed(2))]);
+      });
+
+      rows.push(['', '', 'Subtotal (' + pName + ')', parseFloat(personTotal.toFixed(2))]);
+      rows.push([]);
+    });
+
+    /* Expenses without a person */
+    if (noPersonEntries.length > 0) {
+      var noPersonTotal = noPersonEntries.reduce(function(s, e) { return s + e.amount; }, 0);
+      rows.push(['Other Expenses (No Person Specified)']);
+      rows.push(['Date', 'Category', 'Description', 'Amount ($)']);
+
+      noPersonEntries.forEach(function(entry) {
+        var dateObj = new Date(entry.date + 'T00:00:00');
+        var dateStr = dateObj.toLocaleDateString('en-US', { year: 'numeric', month: '2-digit', day: '2-digit' });
+        var catInfo = getCategoryInfo(entry.category, 'expense');
+        rows.push([dateStr, catInfo.label, entry.desc, parseFloat(entry.amount.toFixed(2))]);
+      });
+
+      rows.push(['', '', 'Subtotal (Other)', parseFloat(noPersonTotal.toFixed(2))]);
+      rows.push([]);
+    }
+
+    /* ---- SECTION 3: SUMMARY ---- */
+    var netFlow = totalIncome - totalExpense;
+    rows.push(['SUMMARY']);
+    rows.push([]);
+    rows.push(['', '', 'Total Income', parseFloat(totalIncome.toFixed(2))]);
+    rows.push(['', '', 'Total Expenses', parseFloat((-totalExpense).toFixed(2))]);
+    rows.push(['', '', 'Net Cash Flow', parseFloat(netFlow.toFixed(2))]);
 
     /* Create workbook and worksheet */
     var wb = XLSX.utils.book_new();
@@ -987,16 +894,16 @@
 
     /* Set column widths */
     ws['!cols'] = [
-      { wch: 14 },  /* Date */
-      { wch: 10 },  /* Type */
-      { wch: 18 },  /* Category */
-      { wch: 30 },  /* Description */
-      { wch: 14 }   /* Amount */
+      { wch: 16 },  /* Date */
+      { wch: 18 },  /* Category / Type */
+      { wch: 34 },  /* Description / Person header */
+      { wch: 16 }   /* Amount */
     ];
 
     /* Merge the title row across all columns */
     ws['!merges'] = [
-      { s: { r: 0, c: 0 }, e: { r: 0, c: 4 } }
+      { s: { r: 0, c: 0 }, e: { r: 0, c: 3 } },
+      { s: { r: 2, c: 0 }, e: { r: 2, c: 3 } }
     ];
 
     XLSX.utils.book_append_sheet(wb, ws, 'Monthly Report');
